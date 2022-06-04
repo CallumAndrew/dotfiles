@@ -1,0 +1,6 @@
+[user]
+	email = sharkytheshark@mailbox.org
+	name = Callum Andrew
+	signingkey = 09BF1E838530C7BD
+[commit]
+	gpgsign = true
