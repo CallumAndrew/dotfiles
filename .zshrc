@@ -8,5 +8,8 @@ precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 zstyle ':vcs_info:git:*' formats ' %b'
 
+# Vi mode
+set -o vi
+
 # Shell prompt
 PS1='[%n@%m %1~$vcs_info_msg_0_]$ ' # [user@hostname pwd branch]$
