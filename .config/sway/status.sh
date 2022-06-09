@@ -15,7 +15,7 @@ fi
 # Volume and mute status
 vol=$(pactl get-sink-volume @DEFAULT_SINK@ | awk -F/ '{print $2}')
 
-if [ $(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}') == "true" ]; then
+if [ $(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}') == "yes" ]; then
 	mute="M"
 fi
 
