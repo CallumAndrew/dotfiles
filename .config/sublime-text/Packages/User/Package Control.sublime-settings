@@ -1,0 +1,10 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"MarkdownEditing",
+		"Package Control",
+		"Terminal",
+		"VintageES",
+	],
+}

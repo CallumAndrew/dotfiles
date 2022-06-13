@@ -7,4 +7,4 @@ export MOZ_ENABLE_WAYLAND=1
 export $(gnome-keyring-daemon -s)
 
 # PATH
-export PATH=~/bin:~/.config/emacs/bin:$PATH
+export PATH=~/bin:$PATH
