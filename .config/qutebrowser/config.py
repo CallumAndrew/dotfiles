@@ -783,7 +783,7 @@ c.content.canvas_reading = False
 ## Default encoding to use for websites. The encoding must be a string
 ## describing an encoding such as _utf-8_, _iso-8859-1_, etc.
 ## Type: String
-# c.content.default_encoding = 'iso-8859-1'
+c.content.default_encoding = 'utf-8'
 
 ## Allow websites to share screen content.
 ## Type: BoolAsk
@@ -818,7 +818,7 @@ c.content.canvas_reading = False
 ##   - true
 ##   - false
 ##   - ask
-# c.content.geolocation = 'ask'
+c.content.geolocation = False
 
 ## Value to send in the `Accept-Language` header. Note that the value
 ## read from JavaScript is always the global value.
@@ -2427,8 +2427,9 @@ c.url.start_pages = ['about:blank']
 # config.bind('y', 'prompt-accept yes', mode='yesno')
 
 ## Bindings for userscripts
-config.bind('<z><l>', 'spawn --userscript qute-pass --username-target secret --username-pattern "username: (.+)"')
-config.bind('<z><u><l>', 'spawn --userscript qute-pass --username-only --username-target secret --username-pattern "username: (.+)"')
-config.bind('<z><p><l>', 'spawn --userscript qute-pass --password-only')
-config.bind('<z><o><l>', 'spawn --userscript qute-pass --otp-only')
-config.bind('<z><m>', 'spawn --userscript view_in_mpv')
+config.bind('zl', 'spawn --userscript qute-pass --username-target secret --username-pattern "username: (.+)"') # Fill username and password
+config.bind('zul', 'spawn --userscript qute-pass --username-only --username-target secret --username-pattern "username: (.+)"') # Fill username
+config.bind('zpl', 'spawn --userscript qute-pass --password-only') # Fill password
+config.bind('zol', 'spawn --userscript qute-pass --otp-only') # Fill one time password
+config.bind('zm', 'spawn --userscript view_in_mpv') # View media in mpv
+config.bind('zr', 'spawn --userscript readability') # Open in reader view
