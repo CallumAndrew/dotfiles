@@ -6,9 +6,9 @@
 date=$(date "+%a %Y-%m-%d %H:%M")
 
 # Battery percentage and charging status
-bat=$(cat /sys/class/power_supply/BAT1/capacity)
+bat=$(cat /sys/class/power_supply/BAT0/capacity)
 
-if [ $(cat /sys/class/power_supply/BAT1/status) == "Charging" ]; then
+if [ $(cat /sys/class/power_supply/BAT0/status) == "Charging" ]; then
 	charging="C"
 fi
 

@@ -22,9 +22,6 @@ set $menu bemenu-run
 set $WALLPAPERS $HOME/Pictures/Wallpapers
 output * bg $(find $WALLPAPERS -type f | shuf -n 1) fill
 
-# Monitors
-output eDP-1 disable
-
 # Example configuration:
 #
 # output HDMI-A-1 resolution 1920x1080 position 1920,0
