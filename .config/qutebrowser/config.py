@@ -750,7 +750,7 @@ c.content.blocking.method = 'both'
 ## Allow websites to read canvas elements. Note this is needed for some
 ## websites to work properly.
 ## Type: Bool
-c.content.canvas_reading = False 
+c.content.canvas_reading = False
 
 ## Which cookies to accept. With QtWebEngine, this setting also controls
 ## other features with tracking capabilities similar to those of cookies;
@@ -1196,7 +1196,7 @@ c.editor.command = ['nvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
 ## Filename of the file to be written to. If not contained in any
 ## argument, the   standard output of the command is read instead.
 ## Type: ShellCommand
-c.fileselect.folder.command = ['alacritty', '-e', 'ranger', '--choosedir={}']
+c.fileselect.folder.command = ['foot', '-e', 'ranger', '--choosedir={}']
 
 ## Handler for selecting file(s) in forms. If `external`, then the
 ## commands specified by `fileselect.single_file.command` and
@@ -1215,7 +1215,7 @@ c.fileselect.folder.command = ['alacritty', '-e', 'ranger', '--choosedir={}']
 ## contained in any argument, the   standard output of the command is
 ## read instead.
 ## Type: ShellCommand
-c.fileselect.multiple_files.command = ['alacritty', '-e', 'ranger', '--choosefiles={}']
+c.fileselect.multiple_files.command = ['foot', '-e', 'ranger', '--choosefiles={}']
 
 ## Command (and arguments) to use for selecting a single file in forms.
 ## The command should write the selected file path to the specified file
@@ -1223,7 +1223,7 @@ c.fileselect.multiple_files.command = ['alacritty', '-e', 'ranger', '--choosefil
 ## the file to be written to. If not contained in any argument, the
 ## standard output of the command is read instead.
 ## Type: ShellCommand
-c.fileselect.single_file.command = ['alacritty', '-e', 'ranger', '--choosefile={}']
+c.fileselect.single_file.command = ['foot', '-e', 'ranger', '--choosefile={}']
 
 ## Font used in the completion categories.
 ## Type: Font
