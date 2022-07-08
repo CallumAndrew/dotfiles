@@ -750,7 +750,7 @@ config.load_autoconfig(True)
 ## Allow websites to read canvas elements. Note this is needed for some
 ## websites to work properly.
 ## Type: Bool
-c.content.canvas_reading = False
+# c.content.canvas_reading = True
 
 ## Which cookies to accept. With QtWebEngine, this setting also controls
 ## other features with tracking capabilities similar to those of cookies;
