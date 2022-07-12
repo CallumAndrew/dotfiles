@@ -211,11 +211,24 @@ mode "resize" {
     bindsym Right resize grow width 10px
 
     # Return to default mode
+    bindsym $mod+r mode "default"
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
+
+#
+# Passthrough keybindings:
+#
+mode "passthrough" {
+    # Return to default mode
+    bindsym $mod+z mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+z mode "passthrough" 
 
 #
 # System control:
