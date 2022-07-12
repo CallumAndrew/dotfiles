@@ -224,8 +224,6 @@ bindsym $mod+r mode "resize"
 mode "passthrough" {
     # Return to default mode
     bindsym $mod+z mode "default"
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
 }
 
 bindsym $mod+z mode "passthrough" 
