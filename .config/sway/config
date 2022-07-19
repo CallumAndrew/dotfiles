@@ -44,7 +44,7 @@ exec swayidle -w \
 # Keyboard
 input "type:keyboard" {
     xkb_layout us,us 
-    xkb_variant ,engram
+    xkb_variant engram,
     xkb_options grp:alt_space_toggle
 }
 
