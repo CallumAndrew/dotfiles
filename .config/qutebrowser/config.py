@@ -750,7 +750,7 @@ config.load_autoconfig(True)
 ## Allow websites to read canvas elements. Note this is needed for some
 ## websites to work properly.
 ## Type: Bool
-# c.content.canvas_reading = True
+c.content.canvas_reading = False
 
 ## Which cookies to accept. With QtWebEngine, this setting also controls
 ## other features with tracking capabilities similar to those of cookies;
@@ -774,7 +774,7 @@ config.load_autoconfig(True)
 ##   - no-3rdparty: Accept cookies from the same origin only. This is known to break some sites, such as GMail.
 ##   - no-unknown-3rdparty: Accept cookies from the same origin only, unless a cookie is already set for the domain. On QtWebEngine, this is the same as no-3rdparty.
 ##   - never: Don't accept cookies at all.
-# c.content.cookies.accept = 'all'
+c.content.cookies.accept = 'no-3rdparty'
 
 ## Store cookies.
 ## Type: Bool
