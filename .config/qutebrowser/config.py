@@ -774,7 +774,7 @@ c.content.canvas_reading = False
 ##   - no-3rdparty: Accept cookies from the same origin only. This is known to break some sites, such as GMail.
 ##   - no-unknown-3rdparty: Accept cookies from the same origin only, unless a cookie is already set for the domain. On QtWebEngine, this is the same as no-3rdparty.
 ##   - never: Don't accept cookies at all.
-c.content.cookies.accept = 'no-3rdparty'
+# c.content.cookies.accept = 'all'
 
 ## Store cookies.
 ## Type: Bool
