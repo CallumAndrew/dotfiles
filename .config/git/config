@@ -4,3 +4,8 @@
 	signingkey = 09BF1E838530C7BD
 [commit]
 	gpgsign = true
+[sendemail]
+	smtpserver = smtp.mailbox.org
+	smtpuser = sharkytheshark@mailbox.org
+	smtpencryption = ssl
+	smtpserverport = 465
