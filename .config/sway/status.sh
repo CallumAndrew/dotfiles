@@ -13,7 +13,7 @@ if [ $(cat /sys/class/power_supply/BAT0/status) == "Charging" ]; then
 fi
 
 # Volume and mute status
-vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2}' | cut -d. -f2)
+vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2}' | xargs echo 100 \* | bc | cut -d. -f1)
 
 if [ $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $3}') == "[MUTED]" ]; then
 	mute="M"
