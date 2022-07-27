@@ -13,10 +13,10 @@ if [ $(cat /sys/class/power_supply/BAT0/status) == "Charging" ]; then
 fi
 
 # Volume and mute status
-vol=$(pactl get-sink-volume @DEFAULT_SINK@ | awk -F/ '{print $2}')
+vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2}' | cut -d. -f2)
 
-if [ $(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}') == "yes" ]; then
+if [ $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $3}') == "[MUTED]" ]; then
 	mute="M"
 fi
 
-echo Bat: $bat% $charging ' 'Vol: $vol $mute ' '$date
+echo Bat: $bat% $charging '|' Vol: $vol% $mute '|' $date
