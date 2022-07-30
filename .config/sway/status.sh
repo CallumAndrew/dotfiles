@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # The Sway configuration file in ~/.config/sway/config calls this script.
 
 # The abbreviated weekday (e.g., "Sat"), followed by the ISO-formatted date

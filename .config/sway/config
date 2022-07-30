@@ -99,10 +99,6 @@ input "type:touchpad" {
     bindsym $mod+m exec makoctl dismiss
     bindsym $mod+Shift+m exec makoctl dismiss -a
 
-    # Rclone push and pull
-    bindsym $mod+u exec rclone sync ~/OneDrive OneDrive:
-    bindsym $mod+Shift+u exec rclone sync OneDrive: ~/OneDrive
-
 #
 # Moving around:
 #
@@ -290,5 +286,8 @@ bar {
 
     # Colour temperature
     exec wlsunset -t 4000 -T 4001
+
+    # Misc.
+    exec ~/.config/sway/autostart.sh
 
 include /etc/sway/config.d/*
