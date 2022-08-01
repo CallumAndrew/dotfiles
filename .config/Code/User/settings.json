@@ -1,0 +1,8 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "editor.tabCompletion": "on",
+    "markdown.extension.list.indentationSize": "inherit",
+    "terminal.integrated.shellIntegration.enabled": true
+}
